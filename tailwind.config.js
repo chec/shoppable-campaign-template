@@ -1,0 +1,45 @@
+module.exports = {
+  purge: {
+    content: [
+      './src/**/*.html',
+      './src/**/*.vue',
+      './src/**/*.jsx',
+    ],
+  },
+  theme: {
+    colors: {
+      transparent: 'transparent',
+      grey: '#283341',
+      'grey-dark': '#151b23',
+      'primary-grey': '#737373',
+      'primary-red': '#E61E38',
+      'secondary-red': '#E4DADC',
+      'primary-green': '#C2E3A8',
+      blue: '#2C7EA1',
+      white: '#FFFFFF',
+      black: '#000000',
+    },
+    fontSize: {
+      xs: '.75rem',
+      sm: '.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.5rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.5rem',
+      '5xl': '3.125rem',
+    },
+    maxHeight: {
+      0: '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      portrait: '25rem',
+      full: '100%',
+      auto: 'auto',
+    },
+  },
+  variants: {},
+  plugins: [],
+};

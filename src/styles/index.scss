@@ -1,0 +1,139 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body{
+    @apply bg-grey-dark text-grey-dark;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+// Headers
+h1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 66px;
+
+    @media (max-width: 640px) {
+    line-height: 33px;
+      font-size: 27px;
+      font-weight: 700;
+    }
+}
+h2{
+    @apply text-5xl;
+    @media (max-width: 640px) {
+        @apply text-3xl;
+    }
+}
+h3{
+    @apply text-4xl;
+    @media (max-width: 640px) {
+        @apply text-2xl;
+    }
+}
+h4{
+    font-size: 28px;
+    line-height: 39px;
+    @media (max-width: 640px) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+h5{
+    @apply text-lg font-medium mb-2;
+    @media (max-width: 640px) {
+        @apply text-base font-bold;
+    }
+}
+p{
+    @apply text-lg;
+}
+
+// Form Elements
+.btn-primary{
+    @apply relative bg-grey-dark text-white py-5 px-20 font-bold;
+    box-shadow: white 8px 6px 0 0;
+    @media (max-width: 640px) {
+        @apply px-10;
+    }
+    .btn-icon{
+        @apply mr-4 inline-block relative;
+        top: 4px;
+    }
+    &:disabled {
+        opacity: 0.65;
+        cursor: default;
+    }
+}
+
+// Form Elements
+.btn-secondary{
+    @apply relative bg-grey text-white py-5 px-20 font-bold;
+    box-shadow: white 8px 6px 0 0;
+    @media (max-width: 640px) {
+        @apply px-10;
+    }
+    .btn-icon{
+        @apply mr-4 inline-block relative;
+        top: 4px;
+    }
+    &:disabled {
+        opacity: 0.65;
+        cursor: default;
+    }
+}
+
+.form-input{
+    @apply   w-full py-2 px-4 mb-5;
+    height: 3.3125rem;
+    border-radius:5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
+    color: #000;
+    font-size:1.15rem;
+    @media (max-width: 640px) {
+        font-size:1rem;
+    }
+    &::placeholder{
+        color: rgba(#000, .9);
+        font-size:1.15rem;
+        font-weight: medium;;
+        @media (max-width: 640px) {
+            font-size:1rem;
+        }
+    }
+    &:focus{
+        outline:none;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+// Alerts
+.alert{
+    @apply bg-white p-5 rounded fixed inset-x-0  my-4 mx-4;
+    z-index: 990;
+     @media (max-width: 640px) {
+         @apply bottom-0;
+     }
+      @media (min-width: 640px) {
+          @apply bottom-0;
+      }
+    &.alert--info{
+        @apply text-white bg-grey-dark;
+    }
+    &.alert--danger{
+        @apply text-white bg-primary-red;
+    }
+    &.alert--success{
+        @apply text-white bg-primary-red;
+    }
+}
+
