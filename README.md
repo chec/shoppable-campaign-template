@@ -1,4 +1,5 @@
 # Shoppable Campaign
+[View demo](https://chec-shoppable-campaign-template.netlify.app/#/)
 
 ## Project setup
 
